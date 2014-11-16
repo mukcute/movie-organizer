@@ -5,7 +5,7 @@
 
 First set up an alias for the command:
 
-    alias imdbtool="python /path/to/imdbtool.py"
+    alias imdbtool="python /path/to/imdbplugin.py"
 
 ### Some interesting usage examples:
 
@@ -15,7 +15,7 @@ Show all info about file X-Men.First.Class
     
 Show all info about 1969 version of 'Sherlock'
 
-    imdbtool -t /path/to/Sherlock.1924
+    imdbtool -t /path/to/Sherlock.1924.avi
     
 Show best guess for a misspelled name
 

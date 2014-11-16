@@ -55,7 +55,10 @@ def getMovieName(path):
 	file_name = basename(path)
 	mov = re.sub(r'[\d+].*$',"",os.path.splitext(file_name)[0])
 	year = re.search(r'(\d+)',os.path.splitext(file_name)[0])
-	return (re.sub(r'[(.]',' ',mov).rstrip(),year.group())
+	if year is None:
+		return (re.sub(r'[([.]',' ',mov).rstrip(),'')
+	else:
+		return (re.sub(r'[([.]',' ',mov).rstrip(),year.group())
 	
 parser = argparse.ArgumentParser(description='Get IMDb data for a movie')
 
