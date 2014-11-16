@@ -9,17 +9,13 @@ First set up an alias for the command:
 
 ### Some interesting usage examples:
 
-Show all info about movie 'Cars'
+Show all info about file X-Men.First.Class
 
-    imdbtool -t Cars
-
-Show all info about latest 'True Grit' movie
-
-    imdbtool -t "True Grit"
+    imdbtool -t /path/to/X-Men.First.Class.2011.720p.BrRip.264.YIFY.mp4
     
-Show all info about 1969 version of 'True Grit'
+Show all info about 1969 version of 'Sherlock'
 
-    imdbtool -t "True Grit" -y 1969
+    imdbtool -t /path/to/Sherlock.1924
     
 Show best guess for a misspelled name
 
@@ -36,21 +32,9 @@ Download movie's poster
     
 ### Additional useful features:
 
-Include full plot summary (not available for some movies)
-
-    imdbtool -t "True Grit" --plot full
-    
-Include additional data from Rotten Tomatoes
-
-    imdbtool -t "True Grit" --tomatoes
-
 Show info by IMDb id
 
     imdbtool -i tt0103064
-    
-Print raw JSON or XML data
-
-    imdbtool -t Cars -r JSON
     
 
 ### Example to get ratings for all movies in current directory (it will use directory and file names as movie titles):
@@ -73,19 +57,10 @@ Then execute the saved command to fetch all the ratings: `./get_ratings.sh > rat
 ## Notes ##
 
  - requires Python 2.7+ (or earlier with installed argparse package)
- - for using it on Windows with Cygwin (which currently comes with Python 2.6) check out [this guide][cyg27]
- - **thanks to creator of this [great site called IM-D-BAPI][imdbapi]**
+ - **thanks to creator of this [great site called OM-D-BAPI][omdbapi]**
  
 I was aware of [this existing tool][fetcher] but unfortunately it was broken at the time I tried it. My implementation relies on the third-party API that handles up to 2 million queries a day, so it's safe to assume that it's author will be keeping it up to date. 
 On the other hand, IMDb has jumped onto the douchebag bandwagon and issued a cease and desist order to the creator of the [IMDBAPI][imdbapi], so it might stop working any time.
 
 
-## License ##
-
-This tool is licensed under [GNU Lesser GPL][lgpl] license.
-
-
-[imdbapi]: http://www.imdbapi.com
-[cyg27]: http://www.tux.org/~mayer/cygwin/python/index.html
-[fetcher]: http://www.mutexes.org/imdb-movie-fetcher/
-[lgpl]: http://www.gnu.org/licenses/lgpl.html
+[imdbapi]: http://www.omdbapi.com
