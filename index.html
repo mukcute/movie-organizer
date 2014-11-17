@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Movie and TV Series Organizer : Tool for retrieving organizing movies/TV Series based data from IMDB">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Movie and TV Series Organizer</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/mukcute/imdb-cli">View on GitHub</a>
+
+          <h1 id="project_title">Movie and TV Series Organizer</h1>
+          <h2 id="project_tagline">Tool for retrieving organizing movies/TV Series based data from IMDB</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/mukcute/imdb-cli/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/mukcute/imdb-cli/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a id="welcome-to-movie-and-tv-series-organizer" class="anchor" href="#welcome-to-movie-and-tv-series-organizer" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to Movie and TV Series Organizer.</h3>
+
+<p>This tool helps you organize your movies and TV series based on data fetched from IMDB. Various uses of the tool include:
+1. Fetch information about a particular movie.
+2. Organize your media library based on year/genre/director.
+3. Clean up any unwanted files in the directory.</p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage:</h3>
+
+<p>First set up an alias for the command:</p>
+
+<pre><code>$ alias imdbtool="python /path/to/imdbplugin.py"
+</code></pre>
+
+<h3>
+<a id="some-interesting-usage-examples" class="anchor" href="#some-interesting-usage-examples" aria-hidden="true"><span class="octicon octicon-link"></span></a>Some interesting usage examples:</h3>
+
+<p>Show all info about file X-Men.First.Class</p>
+
+<pre><code>$ imdbtool -t /path/to/X-Men.First.Class.2011.720p.BrRip.264.YIFY.mp4
+</code></pre>
+
+<p>Show all info about 1924 version of 'Sherlock'</p>
+
+<pre><code>$ imdbtool -t /path/to/Sherlock.1924.avi
+</code></pre>
+
+<p>Show best guess for a misspelled name</p>
+
+<pre><code>$ imdbtool -t "Ture git"
+</code></pre>
+
+<p>Print movie's rating</p>
+
+<pre><code>$ imdbtool -t Cars | sed -n '/^imdbrating/{n;p;}'
+</code></pre>
+
+<p>Download movie's poster</p>
+
+<pre><code>$  imdbtool -t Cars | wget `sed -n '/^poster/{n;p;}'`
+</code></pre>
+
+<h3>
+<a id="additional-useful-features" class="anchor" href="#additional-useful-features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Additional useful features:</h3>
+
+<p>Coming soon.....
+Bugs and feature requests accepted.</p>
+
+<h3>
+<a id="release-details" class="anchor" href="#release-details" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release Details</h3>
+
+<p>Currently the tool is in alpha version. It is being re-worked before being released to public. To view the source code check-out the project from the <code>plugin</code> branch. A release version will be rolled out once all the pending issues are resolved.</p>
+
+<h3>
+<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+
+<p>Snehashish Pal (<a href="https://github.com/mukcute" class="user-mention">@mukcute</a>).</p>
+
+<h3>
+<a id="support-or-contact" class="anchor" href="#support-or-contact" aria-hidden="true"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<p>Having trouble with the tool? Contact <a href="mailto:mukcute.cooltopper@gmail.com">mukcute.cooltopper@gmail.com</a> and we’ll help you sort it out.</p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Movie and TV Series Organizer maintained by <a href="https://github.com/mukcute">mukcute</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
