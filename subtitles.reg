@@ -1,0 +1,43 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\VLC.mp4\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.avi\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.mkv\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.flv\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.m4v\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.mov\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.mpg\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.mpeg\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.mpeg1\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.mpeg2\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.mpeg4\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.vlc\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.vob\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
+
+[HKEY_CLASSES_ROOT\VLC.wmv\shell\Get Subtitle\command]
+@="C:\\Python34\\Scripts\\subliminal download -l en \"%1\""
